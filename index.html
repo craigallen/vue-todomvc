@@ -11,7 +11,7 @@
 </head>
 <body class="container col-lg-4">
     <h1 class="mt-5">
-        Vue TodoMVC
+        Vue Todo
     </h1>
 
     <!-- This div, with the ID "app", is where the application appears when it runs. -->
@@ -22,14 +22,14 @@
         <section>
 
             <!-- Here the v:on attribute is used, which is used to respond to any event. In this case, when the "click" event happens, it causes the value of showComplete to be changed. It is attached here to the label. -->
-            <h4>
+            <p>
                 <label v-on:click="showComplete = !showComplete">
 
                     <!-- The v-model attribute causes the checkdness of this box to always mirror the application's state  -->
                     <input type="checkbox" v-model="showComplete">
                     Show Completed
                 </label>
-            </h4>
+            </p>
 
             <!-- This list group contains a Vue repeater.-->
             <ul class="list-group">
